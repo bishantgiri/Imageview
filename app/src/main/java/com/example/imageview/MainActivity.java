@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private RadioButton rdBatman, rdSuperman, rdSpiderman;
@@ -34,10 +35,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()){
             case R.id.rdb1:
+                Toast toast = Toast.makeText(this,"IAmBatman", Toast.LENGTH_LONG);
+                toast.show();
                 break;
             case R.id.rdb2:
+                Toast toast1 = Toast.makeText(this, "TheSuperman", Toast.LENGTH_LONG);
+                toast1.show();
                 break;
             case R.id.rdb3:
+                Toast toast2 = Toast.makeText(this, "Spiderman", Toast.LENGTH_LONG);
+                toast2.show();
                 break;
         }
     }

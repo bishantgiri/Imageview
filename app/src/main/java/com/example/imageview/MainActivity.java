@@ -35,16 +35,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()){
             case R.id.rdb1:
-                Toast toast = Toast.makeText(this,"IAmBatman", Toast.LENGTH_LONG);
-                toast.show();
+                Toast.makeText(this,"IAmBatman", Toast.LENGTH_LONG).show();
+                ivImage.setImageResource(R.drawable.batman);
                 break;
             case R.id.rdb2:
-                Toast toast1 = Toast.makeText(this, "TheSuperman", Toast.LENGTH_LONG);
-                toast1.show();
+                Toast.makeText(this, "TheSuperman", Toast.LENGTH_LONG).show();
+                ivImage.setImageResource(R.drawable.superman);
                 break;
             case R.id.rdb3:
-                Toast toast2 = Toast.makeText(this, "Spiderman", Toast.LENGTH_LONG);
-                toast2.show();
+                Toast.makeText(this, "Spiderman", Toast.LENGTH_LONG).show();
+                ivImage.setImageResource(R.drawable.spiderman);
                 break;
         }
     }
